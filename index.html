@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction Portal Back Office Executive Assessment | Hecta Proptech</title>
+  <meta name="description" content="Candidate assessment evaluating skills in data verification, Excel, auction operations, MIS reporting and back-office coordination for Hecta Proptech Private Limited.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-brand" id="brand-home-btn" role="button" tabindex="0">
+        <div class="brand-logo">H</div>
+        <div class="brand-text">
+          <div class="brand-company-row">
+            <span class="company-tag">Hecta Proptech</span>
+            <span id="admin-badge" class="badge-evaluator hidden">Evaluator Mode</span>
+          </div>
+          <h1 class="brand-title">Auction Portal Back Office Executive Assessment</h1>
+        </div>
+      </div>
+
+      <!-- Live Assessment Center Bar -->
+      <div id="header-assessment-progress" class="header-progress hidden">
+        <span class="progress-label">PROGRESS</span>
+        <span class="progress-value" id="header-q-counter">Question 1 of 15</span>
+      </div>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <!-- Countdown Timer -->
+        <div id="timer-badge" class="timer-badge hidden" role="timer" aria-live="polite">
+          <svg class="timer-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <div class="timer-content">
+            <span class="timer-sub">TIME LEFT</span>
+            <span id="timer-display" class="timer-time">30:00</span>
+          </div>
+        </div>
+
+        <!-- Evaluator Button -->
+        <button id="btn-toggle-evaluator" class="btn-secondary btn-sm" title="Open Evaluator / Admin Dashboard">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span id="evaluator-btn-label">Evaluator Portal</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN VIEW CONTAINER -->
+  <main class="main-content">
+
+    <!-- ==================== VIEW 1: LANDING PAGE ==================== -->
+    <section id="view-landing" class="view-panel active">
+      <div class="landing-container">
+        <div class="landing-hero">
+          <div class="company-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18M3 7v14M21 7v14M9 21V10h6v11M9 7l3-4 3 4"></path>
+            </svg>
+            <span>Hecta Proptech Private Limited</span>
+          </div>
+
+          <div class="landing-titles">
+            <div class="sub-heading-top">AUCTION PORTAL</div>
+            <h2 class="main-heading">BACK OFFICE EXECUTIVE</h2>
+            <div class="accent-subheading">Candidate Assessment</div>
+          </div>
+
+          <p class="hero-description">
+            Evaluate your skills in data verification, Excel, auction operations, MIS reporting and back-office coordination.
+          </p>
+        </div>
+
+        <!-- 4 Quick Stats Badges -->
+        <div class="info-badges-grid">
+          <div class="badge-card">
+            <div class="badge-num">15</div>
+            <div class="badge-lbl">Questions</div>
+          </div>
+          <div class="badge-card">
+            <div class="badge-num">30</div>
+            <div class="badge-lbl">Minutes</div>
+          </div>
+          <div class="badge-card">
+            <div class="badge-num text-sm">Easy → Hard</div>
+            <div class="badge-lbl">Progressive Levels</div>
+          </div>
+          <div class="badge-card">
+            <div class="badge-num text-sm">Practical</div>
+            <div class="badge-lbl">Scenario Based</div>
+          </div>
+        </div>
+
+        <!-- SKILLS EVALUATED SECTION -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h3>SKILLS EVALUATED</h3>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Data Accuracy</strong>
+                <span>Ensuring 100% precision in reserve prices, property IDs, and auction records.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Excel & Data Handling</strong>
+                <span>Spreadsheet functions (SUM, XLOOKUP, COUNTIFS, ROUND), duplicates, and formulas.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Auction Operations</strong>
+                <span>EMD calculation, bidding timelines, publication checklists, and bank procedures.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Document Verification</strong>
+                <span>Official bank sale notices, corrigendums, title clarity, and KYC checks.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>MIS & Reporting</strong>
+                <span>Monitoring upcoming auctions, tracking status updates, and preparing trackers.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Problem Solving</strong>
+                <span>Handling discrepancies, duplicate listings, and missing parameters efficiently.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Attention to Detail</strong>
+                <span>Spotting transposed figures, decimal miscalculations, and date anomalies.</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-dot">✓</div>
+              <div class="skill-info">
+                <strong>Operational Judgment</strong>
+                <span>SARFAESI Act compliance, symbolic vs. physical possession, and prioritization.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary Start CTA -->
+        <div class="landing-cta">
+          <button id="btn-landing-start" class="btn-primary btn-lg">
+            <span>Start Test Now</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          <p class="cta-note">
+            Starts the 15-question, 30-minute assessment immediately. No personal information required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==================== VIEW 3: INSTRUCTIONS ==================== -->
+    <section id="view-instructions" class="view-panel">
+      <div class="instructions-container">
+        <div class="instructions-card">
+          <div class="instructions-header">
+            <span class="step-indicator">Step 2 of 2</span>
+            <h2>Before You Begin</h2>
+            <p>Please read the following instructions carefully before starting the assessment.</p>
+          </div>
+
+          <!-- Quick Metrics Banner -->
+          <div class="instruction-metrics-row">
+            <div class="inst-metric">
+              <div class="inst-metric-title">ASSESSMENT</div>
+              <div class="inst-metric-val">15 Questions</div>
+            </div>
+            <div class="inst-metric">
+              <div class="inst-metric-title">TIME</div>
+              <div class="inst-metric-val">30 Minutes</div>
+            </div>
+            <div class="inst-metric">
+              <div class="inst-metric-title">MAXIMUM SCORE</div>
+              <div class="inst-metric-val highlight">100 Points</div>
+            </div>
+          </div>
+
+          <!-- 10 Detailed Guidelines -->
+          <div class="guidelines-box">
+            <div class="guidelines-heading">Instructions:</div>
+            <ol class="guidelines-list">
+              <li>You have 30 minutes to complete 15 questions.</li>
+              <li>The assessment contains Easy, Medium and Hard questions.</li>
+              <li>Some questions are multiple choice.</li>
+              <li>Some questions require calculations.</li>
+              <li>Some questions require written answers.</li>
+              <li>Read all property and auction data carefully.</li>
+              <li>For scenario questions, explain your reasoning clearly.</li>
+              <li>Do not refresh or close the browser during the assessment.</li>
+              <li>Your progress is automatically saved locally.</li>
+              <li>Submit the assessment only when you are ready.</li>
+            </ol>
+          </div>
+
+          <!-- Scoring Structure Reference -->
+          <div class="scoring-structure-box">
+            <div class="scoring-tag">QUESTION SCORING</div>
+            <div class="scoring-pills">
+              <span class="pill">Q1–5: <strong>4 pts each</strong> (Total = 20)</span>
+              <span class="pill">Q6–10: <strong>6 pts each</strong> (Total = 30)</span>
+              <span class="pill">Q11–15: <strong>10 pts each</strong> (Total = 50)</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="instruction-actions">
+            <button id="btn-back-to-form" class="btn-secondary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"></path>
+              </svg>
+              <span>Back to Home</span>
+            </button>
+
+            <button id="btn-start-test" class="btn-primary btn-lg">
+              <span>Start Assessment</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: ASSESSMENT WORKSPACE ==================== -->
+    <section id="view-assessment" class="view-panel">
+      <div class="assessment-container">
+        
+        <!-- Assessment Progress Header Bar -->
+        <div class="progress-bar-card">
+          <div class="progress-info-row">
+            <div class="progress-left">
+              <span id="current-q-label" class="q-label-text">Question 1 of 15</span>
+              <span class="divider">|</span>
+              <span id="badge-difficulty" class="badge-difficulty easy">EASY</span>
+              <span id="badge-points" class="badge-pts">4 Points</span>
+            </div>
+            <div class="progress-right">
+              <span id="progress-pct-text">7% Completed</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div id="progress-fill" class="progress-fill" style="width: 7%;"></div>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card" id="question-card">
+          <div class="q-card-header">
+            <div class="q-meta-left">
+              <span class="q-number-tag" id="q-number-badge">QUESTION 1</span>
+              <span class="q-skill-badge" id="q-skill-badge">Auction Knowledge</span>
+            </div>
+            <button id="btn-flag-question" class="btn-flag" title="Flag this question to review later">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                <line x1="4" y1="22" x2="4" y2="15"></line>
+              </svg>
+              <span id="flag-btn-text">Flag Question</span>
+            </button>
+          </div>
+
+          <div class="q-card-body">
+            <h3 id="question-text" class="question-text">
+              Loading question...
+            </h3>
+
+            <!-- Options Container (A, B, C, D) -->
+            <div id="options-container" class="options-container" role="radiogroup">
+              <!-- Dynamically populated options -->
+            </div>
+          </div>
+
+          <!-- Bottom Navigation Row -->
+          <div class="q-card-footer">
+            <button id="btn-prev-question" class="btn-secondary" disabled>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"></path>
+              </svg>
+              <span>Previous</span>
+            </button>
+
+            <div class="nav-right-actions">
+              <button id="btn-next-question" class="btn-primary">
+                <span>Next</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              <button id="btn-submit-test-direct" class="btn-primary btn-submit hidden">
+                <span>Submit Assessment</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 Question Navigator Grid -->
+        <div class="navigator-card">
+          <div class="navigator-header">
+            <div>
+              <h4>Question Navigator</h4>
+              <p>Jump to any question at any time</p>
+            </div>
+
+            <!-- Visual State Legend -->
+            <div class="nav-legend">
+              <div class="legend-item">
+                <span class="legend-box answered"></span>
+                <span>Answered (<span id="legend-answered-count">0</span>)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-box unanswered"></span>
+                <span>Unanswered (<span id="legend-unanswered-count">15</span>)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-box flagged"></span>
+                <span>Flagged (<span id="legend-flagged-count">0</span>)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons 1 to 15 -->
+          <div class="q-grid-buttons" id="navigator-buttons-grid">
+            <!-- Populated dynamically via JS -->
+          </div>
+
+          <!-- Quick review & submit shortcut -->
+          <div class="navigator-footer">
+            <span class="nav-footer-hint">All progress is saved in real time to your browser.</span>
+            <button id="btn-review-submit-shortcut" class="btn-text-link">
+              Review &amp; Submit Assessment →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: PERSONALIZED COMPLETION SCREEN (TWO-CARD LAYOUT) ==================== -->
+    <section id="view-completion" class="view-panel">
+      <div class="completion-wrapper">
+        <div class="completion-cards-grid">
+
+          <!-- CARD 1: SUNFLOWER & CAT HERO CARD -->
+          <div class="completion-card card-hero">
+            <!-- Subtle Sparkles & Sunflowers Background Elements -->
+            <div class="sparkle-deco top-left">✨</div>
+            <div class="sunflower-deco top-right">🌻</div>
+            <div class="sunflower-deco bottom-left">💛</div>
+            <div class="sparkle-deco bottom-right">✨</div>
+
+            <!-- UPLOADED SUNFLOWER / CAT HERO IMAGE (ORIGINAL RATIO, NO CROP, NO DISTORTION) -->
+            <div class="hero-image-wrapper">
+              <img 
+                src="sunflower-cat.png" 
+                alt="This Sunflower is for You - Orange Cat holding Sunflower" 
+                class="sunflower-hero-img"
+                id="completion-hero-img"
+              >
+            </div>
+            
+            <div class="hero-card-caption">
+              <span class="hero-caption-text">This Sunflower is for You 🌻</span>
+              <p class="hero-caption-sub">Wishing your journey is filled with sunshine &amp; smiles!</p>
+            </div>
+          </div>
+
+          <!-- CARD 2: ASSESSMENT OUTCOME & SCORE CARD -->
+          <div class="completion-card card-outcome">
+            <!-- Exact Requested Heading and Sunflower -->
+            <div class="completion-sunflower-icon">🌻</div>
+            <h2 class="completion-title">Assessment Completed!</h2>
+
+            <!-- DYNAMIC SCORE CARD -->
+            <div class="dynamic-score-box">
+              <div class="score-pre-title">YOUR SCORE</div>
+              <div class="score-main-display">
+                <span id="final-dynamic-score" class="score-bold">0</span><span class="score-total">/100</span>
+              </div>
+              <div class="score-meta-row">
+                <div class="meta-item">
+                  <span class="meta-lbl">Accuracy:</span>
+                  <span id="final-dynamic-accuracy" class="meta-val">0%</span>
+                </div>
+                <span class="meta-divider">|</span>
+                <div class="meta-item">
+                  <span class="meta-lbl">Time Taken:</span>
+                  <span id="final-dynamic-time" class="meta-val">00:00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prominent Encouraging Words -->
+            <div class="encouragement-block">
+              <h3 class="wishing-title">All the best for your interview! 💛</h3>
+              <p class="wishing-sub">
+                You&apos;ve got this.<br>
+                Wishing you the very best!
+              </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="completion-actions">
+              <button id="btn-view-detailed-results" class="btn-primary btn-lg">
+                <span>View Detailed Results</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+
+              <button id="btn-finish-assessment" class="btn-secondary">
+                <span>Finish</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 6: DETAILED RESULTS PAGE ==================== -->
+    <section id="view-detailed-results" class="view-panel">
+      <div class="results-container">
+        
+        <!-- Top Navigation Bar -->
+        <div class="results-nav-bar">
+          <button id="btn-back-to-completion" class="btn-secondary btn-sm">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+            <span>Back to Completion Screen</span>
+          </button>
+
+          <button id="btn-retake-assessment" class="btn-secondary btn-sm">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <polyline points="1 20 1 14 7 14"></polyline>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+            </svg>
+            <span>Retake Assessment</span>
+          </button>
+        </div>
+
+        <!-- MAIN OVERVIEW CARD -->
+        <div class="results-main-card">
+          <div class="results-card-header">
+            <div>
+              <span class="report-badge">Official Assessment Results</span>
+              <h2>Assessment Results</h2>
+              <div class="candidate-meta-line">
+                Candidate Name: <strong id="res-candidate-name">—</strong>
+              </div>
+            </div>
+
+            <div class="results-hero-score">
+              <div class="hero-score-tag">Overall Score</div>
+              <div class="hero-score-num">
+                <span id="res-score-num">0</span><span class="denom">/100</span>
+              </div>
+              <div class="hero-accuracy-text">Accuracy: <span id="res-accuracy-num">0%</span></div>
+            </div>
+          </div>
+
+          <!-- 4 Performance Metric Cards -->
+          <div class="results-metrics-grid">
+            <div class="res-metric-box">
+              <span class="res-m-title">Time Taken</span>
+              <span id="res-time-taken" class="res-m-val">00:00</span>
+            </div>
+            <div class="res-metric-box">
+              <span class="res-m-title">Questions Answered</span>
+              <span id="res-answered-count" class="res-m-val">0 / 15</span>
+            </div>
+            <div class="res-metric-box">
+              <span class="res-m-title">Questions Correct</span>
+              <span id="res-correct-count" class="res-m-val highlight">0 / 15</span>
+            </div>
+            <div class="res-metric-box">
+              <span class="res-m-title">Candidate Experience</span>
+              <span id="res-experience-val" class="res-m-val">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION PERFORMANCE CARD -->
+        <div class="results-section-card">
+          <h3>SECTION PERFORMANCE</h3>
+          <div class="sections-performance-grid">
+            <div class="sec-card easy">
+              <div class="sec-head">
+                <span>EASY (Q1–Q5)</span>
+                <span class="pts-tag">4 pts each</span>
+              </div>
+              <div class="sec-score"><span id="sec-easy-score">0</span> / 20</div>
+              <div class="sec-progress"><div id="sec-easy-bar" class="sec-bar" style="width: 0%;"></div></div>
+            </div>
+
+            <div class="sec-card medium">
+              <div class="sec-head">
+                <span>MEDIUM (Q6–Q10)</span>
+                <span class="pts-tag">6 pts each</span>
+              </div>
+              <div class="sec-score"><span id="sec-medium-score">0</span> / 30</div>
+              <div class="sec-progress"><div id="sec-medium-bar" class="sec-bar" style="width: 0%;"></div></div>
+            </div>
+
+            <div class="sec-card hard">
+              <div class="sec-head">
+                <span>HARD (Q11–Q15)</span>
+                <span class="pts-tag">10 pts each</span>
+              </div>
+              <div class="sec-score"><span id="sec-hard-score">0</span> / 50</div>
+              <div class="sec-progress"><div id="sec-hard-bar" class="sec-bar" style="width: 0%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILL BREAKDOWN CARD -->
+        <div class="results-skill-card">
+          <div class="skill-card-head">
+            <h3>SKILL BREAKDOWN</h3>
+            <p>Objective performance across simulated core back-office proficiencies (No hiring labels applied).</p>
+          </div>
+
+          <div class="skill-bars-list" id="skills-breakdown-list">
+            <!-- Dynamically populated skill progress bars -->
+          </div>
+        </div>
+
+        <!-- QUESTION REVIEW (ALL 15 QUESTIONS) -->
+        <div class="results-review-card">
+          <div class="review-card-head">
+            <div>
+              <h3>QUESTION REVIEW</h3>
+              <p>Review individual responses, benchmark answer keys, and operational explanations.</p>
+            </div>
+            
+            <div class="filter-pills" id="review-filter-pills">
+              <button class="pill-btn active" data-filter="ALL">All (15)</button>
+              <button class="pill-btn" data-filter="EASY">Easy (5)</button>
+              <button class="pill-btn" data-filter="MEDIUM">Medium (5)</button>
+              <button class="pill-btn" data-filter="HARD">Hard (5)</button>
+            </div>
+          </div>
+
+          <div class="review-questions-list" id="review-questions-list">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- MANDATORY DISCLAIMER AT BOTTOM -->
+        <div class="mandatory-disclaimer-box">
+          <div class="disclaimer-title">Assessment Platform Notice</div>
+          <p class="disclaimer-text">
+            This assessment evaluates performance on the simulated tasks provided. It does not by itself determine employment eligibility or hiring outcome.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 7: ADMIN / EVALUATOR DASHBOARD ==================== -->
+    <section id="view-admin" class="view-panel">
+      <div class="admin-container">
+        
+        <!-- Demo Password Protected Login Gate -->
+        <div id="admin-auth-gate" class="admin-login-box">
+          <div class="admin-login-card">
+            <div class="admin-lock-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h2>Evaluator Portal Access</h2>
+            <p>Enter the evaluator passcode to view candidate submissions and export MIS trackers.</p>
+
+            <form id="admin-login-form">
+              <div class="form-group">
+                <label for="admin-password">Evaluator Passcode</label>
+                <input type="password" id="admin-password" placeholder="Enter admin123" required>
+                <div class="field-error" id="err-admin-pass"></div>
+              </div>
+
+              <button type="submit" class="btn-primary btn-block">Sign In to Dashboard</button>
+            </form>
+
+            <div class="demo-admin-notice">
+              <strong>Notice:</strong> Demo Admin Mode — replace with real authentication before production.<br>
+              Password: <code class="code-pill">admin123</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Authenticated Evaluator Dashboard -->
+        <div id="admin-dashboard-content" class="admin-dashboard-wrapper hidden">
+          <!-- Top Demo Notice Banner -->
+          <div class="admin-demo-alert">
+            <div class="alert-left">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span><strong>Demo Admin Mode</strong> — replace with real authentication before production.</span>
+            </div>
+            <button id="btn-admin-logout" class="btn-link-sm">Sign Out</button>
+          </div>
+
+          <!-- Header & CSV Export -->
+          <div class="admin-head-row">
+            <div>
+              <h2>Evaluator / Admin Dashboard</h2>
+              <p>Candidate performance records, response reviews, and operational MIS export.</p>
+            </div>
+
+            <button id="btn-export-csv" class="btn-primary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Export Results CSV</span>
+            </button>
+          </div>
+
+          <!-- 5 Stats Summary Cards -->
+          <div class="admin-stats-grid">
+            <div class="admin-stat-card">
+              <div class="stat-lbl">TOTAL CANDIDATES</div>
+              <div class="stat-val" id="stat-total-candidates">0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="stat-lbl">COMPLETED ASSESSMENTS</div>
+              <div class="stat-val highlight" id="stat-completed-candidates">0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="stat-lbl">AVERAGE SCORE</div>
+              <div class="stat-val" id="stat-avg-score">0/100</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="stat-lbl">HIGHEST SCORE</div>
+              <div class="stat-val gold" id="stat-highest-score">0/100</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="stat-lbl">AVG COMPLETION TIME</div>
+              <div class="stat-val" id="stat-avg-time">00:00</div>
+            </div>
+          </div>
+
+          <!-- Filter & Search Toolbar -->
+          <div class="admin-toolbar">
+            <div class="search-input-wrap">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="admin-search-input" placeholder="Search by name, email, or city...">
+            </div>
+
+            <div class="filter-controls">
+              <!-- Score Filter -->
+              <select id="admin-filter-score" class="admin-select">
+                <option value="ALL">All Scores</option>
+                <option value="90+">Score: 90+ pts</option>
+                <option value="75-89">Score: 75–89 pts</option>
+                <option value="<75">Score: &lt; 75 pts</option>
+              </select>
+
+              <!-- Experience Filter -->
+              <select id="admin-filter-experience" class="admin-select">
+                <option value="ALL">All Experience</option>
+                <option value="Fresher">Fresher</option>
+                <option value="Less than 1 year">Less than 1 year</option>
+                <option value="1–2 years">1–2 years</option>
+                <option value="2–3 years">2–3 years</option>
+                <option value="3+ years">3+ years</option>
+              </select>
+
+              <!-- Sort Order -->
+              <select id="admin-sort-by" class="admin-select">
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+                <option value="score-desc">Score: High to Low</option>
+                <option value="score-asc">Score: Low to High</option>
+                <option value="time-asc">Time: Fastest First</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Candidates Table -->
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Candidate</th>
+                  <th>Experience</th>
+                  <th>Score</th>
+                  <th>Percentage</th>
+                  <th>Time Taken</th>
+                  <th>Completion Date</th>
+                  <th>Status</th>
+                  <th style="text-align: right;">Action</th>
+                </tr>
+              </thead>
+              <tbody id="admin-candidates-tbody">
+                <!-- Dynamically populated rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SUBMISSION CONFIRMATION MODAL ==================== -->
+  <div id="modal-submit-confirmation" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-confirm-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <div>
+          <h3 id="modal-confirm-title">Are you sure you want to submit?</h3>
+          <p>Please review your answer summary before finalizing.</p>
+        </div>
+      </div>
+
+      <!-- Warning if questions remain unanswered -->
+      <div id="modal-unanswered-warning" class="modal-warning-box hidden">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+          <line x1="12" y1="9" x2="12" y2="13"></line>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+        <span><strong>You still have unanswered questions.</strong> Unanswered questions receive 0 points.</span>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="modal-summary-grid">
+        <div class="modal-stat-item">
+          <span class="m-lbl">Answered</span>
+          <span class="m-val" id="modal-stat-answered">0/15</span>
+        </div>
+        <div class="modal-stat-item">
+          <span class="m-lbl">Unanswered</span>
+          <span class="m-val" id="modal-stat-unanswered">15</span>
+        </div>
+        <div class="modal-stat-item">
+          <span class="m-lbl">Flagged</span>
+          <span class="m-val highlight" id="modal-stat-flagged">0</span>
+        </div>
+      </div>
+
+      <!-- Modal Action Buttons -->
+      <div class="modal-actions">
+        <button id="btn-modal-cancel" class="btn-secondary">Go Back</button>
+        <button id="btn-modal-confirm-submit" class="btn-primary">Submit Assessment</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CANDIDATE DETAILS MODAL (ADMIN) ==================== -->
+  <div id="modal-candidate-dossier" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card modal-lg">
+      <div class="modal-head">
+        <div>
+          <span class="report-badge">Candidate Dossier</span>
+          <h3 id="dossier-name">—</h3>
+          <p id="dossier-meta">—</p>
+        </div>
+        <button id="btn-close-dossier" class="btn-close">&times;</button>
+      </div>
+
+      <div class="dossier-body">
+        <!-- Score Highlights -->
+        <div class="dossier-stats-grid">
+          <div class="dossier-stat-box">
+            <span class="d-lbl">Score</span>
+            <span class="d-val" id="dossier-score">0/100</span>
+          </div>
+          <div class="dossier-stat-box">
+            <span class="d-lbl">Accuracy</span>
+            <span class="d-val" id="dossier-accuracy">0%</span>
+          </div>
+          <div class="dossier-stat-box">
+            <span class="d-lbl">Time Taken</span>
+            <span class="d-val" id="dossier-time">00:00</span>
+          </div>
+          <div class="dossier-stat-box">
+            <span class="d-lbl">Qualification</span>
+            <span class="d-val" id="dossier-qualification">—</span>
+          </div>
+        </div>
+
+        <!-- Section Scores -->
+        <div class="dossier-section-scores">
+          <h4>Section Breakdown</h4>
+          <div class="dossier-sec-pills">
+            <span id="dossier-sec-easy" class="pill">Easy: 0/20</span>
+            <span id="dossier-sec-medium" class="pill">Medium: 0/30</span>
+            <span id="dossier-sec-hard" class="pill">Hard: 0/50</span>
+          </div>
+        </div>
+
+        <!-- Answers Log -->
+        <div class="dossier-answers-block">
+          <h4>Candidate Submitted Answers (15 Questions)</h4>
+          <div class="dossier-answers-list" id="dossier-answers-list">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="btn-close-dossier-foot" class="btn-secondary">Close Dossier</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>Hecta Proptech Private Limited</strong>
+        <span class="divider">|</span>
+        <span>Auction Portal Back Office Assessment</span>
+      </div>
+      <div class="footer-right">
+        <button id="footer-evaluator-link" class="footer-btn">Evaluator Access</button>
+        <span class="divider">•</span>
+        <span>Confidential Assessment Platform</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

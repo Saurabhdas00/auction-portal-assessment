@@ -1,0 +1,9 @@
+# Logs & Temp
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Local Environment
+.env
+.env.local
