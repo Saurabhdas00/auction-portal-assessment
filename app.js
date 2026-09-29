@@ -473,9 +473,12 @@ function renderCurrentView() {
     targetPanel.classList.add("active");
   }
 
+  const headerSubmitBtn = document.getElementById("btn-header-submit");
+
   if (appState.currentView === "assessment") {
     headerProgress.classList.remove("hidden");
     timerBadge.classList.remove("hidden");
+    if (headerSubmitBtn) headerSubmitBtn.classList.remove("hidden");
     adminBadge.classList.add("hidden");
     evaluatorBtnLabel.textContent = "Evaluator Portal";
     renderQuestion(appState.currentQuestionIndex);
@@ -483,12 +486,14 @@ function renderCurrentView() {
   } else if (appState.currentView === "admin") {
     headerProgress.classList.add("hidden");
     timerBadge.classList.add("hidden");
+    if (headerSubmitBtn) headerSubmitBtn.classList.add("hidden");
     adminBadge.classList.remove("hidden");
     evaluatorBtnLabel.textContent = "Exit Evaluator";
     renderAdminDashboard();
   } else {
     headerProgress.classList.add("hidden");
     timerBadge.classList.add("hidden");
+    if (headerSubmitBtn) headerSubmitBtn.classList.add("hidden");
     adminBadge.classList.add("hidden");
     evaluatorBtnLabel.textContent = "Evaluator Portal";
 
@@ -640,10 +645,16 @@ function renderQuestion(index) {
 
   if (index === QUESTIONS.length - 1) {
     nextBtn.classList.add("hidden");
-    submitDirectBtn.classList.remove("hidden");
+    if (submitDirectBtn) {
+      submitDirectBtn.classList.remove("btn-secondary", "hidden");
+      submitDirectBtn.classList.add("btn-primary");
+    }
   } else {
     nextBtn.classList.remove("hidden");
-    submitDirectBtn.classList.add("hidden");
+    if (submitDirectBtn) {
+      submitDirectBtn.classList.remove("hidden", "btn-primary");
+      submitDirectBtn.classList.add("btn-secondary");
+    }
   }
 
   updateNavigatorGrid();
@@ -1245,9 +1256,26 @@ function setupEventListeners() {
     renderQuestion(appState.currentQuestionIndex);
   });
 
-  // Submit Triggers
-  document.getElementById("btn-submit-test-direct").addEventListener("click", openSubmitConfirmationModal);
-  document.getElementById("btn-review-submit-shortcut").addEventListener("click", openSubmitConfirmationModal);
+  // Submit Triggers (Header, Top of Card, Bottom Footer, Navigator shortcut)
+  const headerSubmitBtn = document.getElementById("btn-header-submit");
+  if (headerSubmitBtn) {
+    headerSubmitBtn.addEventListener("click", openSubmitConfirmationModal);
+  }
+
+  const cardSubmitTopBtn = document.getElementById("btn-card-submit-top");
+  if (cardSubmitTopBtn) {
+    cardSubmitTopBtn.addEventListener("click", openSubmitConfirmationModal);
+  }
+
+  const submitDirectBtn = document.getElementById("btn-submit-test-direct");
+  if (submitDirectBtn) {
+    submitDirectBtn.addEventListener("click", openSubmitConfirmationModal);
+  }
+
+  const reviewSubmitShortcut = document.getElementById("btn-review-submit-shortcut");
+  if (reviewSubmitShortcut) {
+    reviewSubmitShortcut.addEventListener("click", openSubmitConfirmationModal);
+  }
 
   // Modal Buttons
   document.getElementById("btn-modal-cancel").addEventListener("click", closeSubmitConfirmationModal);

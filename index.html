@@ -46,6 +46,14 @@
           </div>
         </div>
 
+        <!-- Sticky Header Submit Button (Always Accessible Without Scrolling) -->
+        <button id="btn-header-submit" class="btn-primary btn-sm btn-header-submit hidden" title="Finish and submit assessment">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span>Submit Assessment</span>
+        </button>
+
         <!-- Evaluator Button -->
         <button id="btn-toggle-evaluator" class="btn-secondary btn-sm" title="Open Evaluator / Admin Dashboard">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
@@ -297,13 +305,21 @@
               <span class="q-number-tag" id="q-number-badge">QUESTION 1</span>
               <span class="q-skill-badge" id="q-skill-badge">Auction Knowledge</span>
             </div>
-            <button id="btn-flag-question" class="btn-flag" title="Flag this question to review later">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                <line x1="4" y1="22" x2="4" y2="15"></line>
-              </svg>
-              <span id="flag-btn-text">Flag Question</span>
-            </button>
+            <div class="q-actions-right">
+              <button id="btn-flag-question" class="btn-flag" title="Flag this question to review later">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                  <line x1="4" y1="22" x2="4" y2="15"></line>
+                </svg>
+                <span id="flag-btn-text">Flag Question</span>
+              </button>
+              <button id="btn-card-submit-top" class="btn-sm btn-submit-outline" title="Finish and submit assessment at any time">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Submit Assessment</span>
+              </button>
+            </div>
           </div>
 
           <div class="q-card-body">
@@ -327,17 +343,16 @@
             </button>
 
             <div class="nav-right-actions">
+              <button id="btn-submit-test-direct" class="btn-secondary btn-submit-footer" title="Submit Assessment at any time">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Submit Assessment</span>
+              </button>
               <button id="btn-next-question" class="btn-primary">
                 <span>Next</span>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button>
-              <button id="btn-submit-test-direct" class="btn-primary btn-submit hidden">
-                <span>Submit Assessment</span>
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
               </button>
             </div>
